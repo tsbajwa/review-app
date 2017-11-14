@@ -15,3 +15,15 @@ export function sortScoreByDescending(reviews) {
 
   return sortedReviews;
 }
+
+export function sortChronobyAscending(reviews) {
+  return reviews.sort((a, b) => {
+    return new Date(a.createdAt) - new Date(b.createdAt);
+  });
+}
+
+export function sortChronobyDescending(reviews) {
+  return reviews.sort((a, b) => {
+    return new Date(b.createdAt) - new Date(a.createdAt);
+  });
+}
