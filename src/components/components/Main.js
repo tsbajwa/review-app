@@ -1,11 +1,13 @@
 import React from "react";
+import ErrorScreen from "./ErrorScreen";
+import ReviewContainer from "../containers/ReviewContainer";
 
-export default function Main({ loading, reviews }) {
+export default function Main({ loading, reviews, getReviews }) {
   if (loading) {
     return <div>Loading</div>;
   } else if (reviews.length !== 0) {
-    return <div> Reveiw View</div>;
+    return <ReviewContainer reviews={reviews} />;
   } else {
-    return <div> Error</div>;
+    return <ErrorScreen getReviews={getReviews} />;
   }
 }

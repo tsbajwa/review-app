@@ -1,5 +1,5 @@
 import React from "react";
-import { getReviews, otherReview } from "../../util/api";
+import { reviewDataRetreival } from "../../util/api";
 import Main from "../components/Main";
 
 export default class MainContainer extends React.Component {
@@ -7,9 +7,12 @@ export default class MainContainer extends React.Component {
     loading: true,
     reviews: [],
   };
-  //Check error format
   componentDidMount() {
-    getReviews()
+    this.getReviews();
+  }
+  // TODO: Check error format, maybe make it ErrorCount and see whether we want to pass it down to props
+  getReviews = () => {
+    reviewDataRetreival()
       .then(res => {
         const reviews = res.data.reviews;
         this.setState({ loading: false, reviews });
@@ -17,9 +20,9 @@ export default class MainContainer extends React.Component {
       .catch(error => {
         this.setState({ loading: false, error });
       });
-  }
+  };
 
   render() {
-    return <Main {...this.state} />;
+    return <Main {...this.state} getReviews={this.getReviews} />;
   }
 }
