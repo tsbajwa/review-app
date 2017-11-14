@@ -80,10 +80,15 @@ h1 {
 .review-list-container {
   padding-top: 20px; }
 
-.review-single-container:hover {
-  cursor: pointer; }
+.review-single-container {
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5); }
+  .review-single-container:hover {
+    cursor: pointer; }
 
 .review-single-summary-container {
+  padding: 5px 10px 5px 10px; }
+
+.review-single-summary-top {
   display: flex;
   justify-content: space-between; }
 
@@ -91,13 +96,13 @@ h1 {
   text-align: left; }
 
 .review-extra-container {
-  text-align: left; }
+  padding: 0px 10px 5px 10px; }
   .review-extra-container span {
     display: block; }
 
 .review-extra-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   width: 100%;
   padding-bottom: 20px; }

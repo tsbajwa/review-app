@@ -8,8 +8,8 @@ export default function ReviewSingle({ review, expanded, onClick }) {
       className="review-single-container"
       onClick={onClick}
     >
-      <div>
-        <div className="review-single-summary-container">
+      <div className="review-single-summary-container">
+        <div className="review-single-summary-top">
           <span>{review.authorName}</span>
           <span>Overall Score: {review.score} out of 5</span>
         </div>
@@ -22,3 +22,5 @@ export default function ReviewSingle({ review, expanded, onClick }) {
     </div>
   );
 }
+
+//title based on expanded

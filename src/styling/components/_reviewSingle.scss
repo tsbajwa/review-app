@@ -1,10 +1,14 @@
 .review-single-container {
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+
   &:hover {
     cursor: pointer;
   }
 }
-
 .review-single-summary-container {
+  padding: 5px 10px 5px 10px;
+}
+.review-single-summary-top {
   display: flex;
   justify-content: space-between;
 }
