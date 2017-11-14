@@ -2,12 +2,9 @@ import React from "react";
 import ReviewExtraInfo from "./ReviewExtraInfo";
 
 export default function ReviewSingle({ review, expanded, onClick }) {
+  const titleText = expanded ? "Click to minimize" : "Click to see detailed score breakdown";
   return (
-    <div
-      title="Click to see detailed review breakdown"
-      className="review-single-container"
-      onClick={onClick}
-    >
+    <div title={titleText} className="review-single-container" onClick={onClick}>
       <div className="review-single-summary-container">
         <div className="review-single-summary-top">
           <span>{review.authorName}</span>
@@ -22,5 +19,3 @@ export default function ReviewSingle({ review, expanded, onClick }) {
     </div>
   );
 }
-
-//title based on expanded
