@@ -27,3 +27,11 @@ export function sortChronobyDescending(reviews) {
     return new Date(b.createdAt) - new Date(a.createdAt);
   });
 }
+
+export function showFavourableReviews(reviews) {
+  return reviews.filter(review => review.score > 3);
+}
+
+export function showUnfavourableReviews(reviews) {
+  return reviews.filter(review => review.score < 3);
+}
