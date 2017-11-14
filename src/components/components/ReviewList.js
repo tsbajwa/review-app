@@ -1,10 +1,10 @@
 import React from "react";
-import ReviewSingle from "./ReviewSingle";
+import ReviewSingleContainer from "../containers/ReviewSingleContainer";
 
 export default function reviewList({ sortedReviews }) {
   const renderList = () => {
     return sortedReviews.map((review, index) => {
-      return <ReviewSingle review={review} key={index} />;
+      return <ReviewSingleContainer review={review} key={index} />;
     });
   };
 
