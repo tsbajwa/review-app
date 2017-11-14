@@ -1,5 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
 //Helpers
 
 @import "./styling/helpers/_breakpoint.scss";
 @import "./styling/helpers/_color.scss";
 @import "./styling/helpers/_typography.scss";
+
+//components
+
+@import "./styling/components/_errorScreen.scss";

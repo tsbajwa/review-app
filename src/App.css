@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500|Source+Sans+Pro"');
+html {
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box; }
+
+body,
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Source Sans Pro", sans-serif; }
+
+h1 {
+  font-size: 24px; }
+
+.error-screen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+  .error-screen-container__btn {
+    background: #78bf3d;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px; }
