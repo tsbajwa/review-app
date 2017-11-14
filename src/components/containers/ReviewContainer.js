@@ -20,7 +20,7 @@ export default class ReviewContainer extends React.Component {
   };
 
   render() {
-    let reviewsToRender = this.state.reviewsSorted
+    let reviewsToSort = this.state.reviewsSorted
       ? this.state.sortedReviews
       : this.state.filteredReviews;
     return (
@@ -30,7 +30,7 @@ export default class ReviewContainer extends React.Component {
           handleFilteredReviewUpdate={this.handleFilteredReviewUpdate}
         />
         <SortContainer
-          reviews={reviewsToRender}
+          reviews={reviewsToSort}
           handleSortedReviewUpdate={this.handleSortedReviewUpdate}
         />
         <ReviewList sortedReviews={this.state.filteredReviews} />
