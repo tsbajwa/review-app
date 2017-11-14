@@ -8,6 +8,11 @@ body {
   text-align: center;
 }
 
+#root {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 //Helpers
 
 @import "./styling/helpers/_breakpoint.scss";
