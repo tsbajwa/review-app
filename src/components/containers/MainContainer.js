@@ -11,7 +11,7 @@ export default class MainContainer extends React.Component {
   componentDidMount() {
     this.getReviews();
   }
-  // TODO: Check error format, maybe make it ErrorCount and see whether we want to pass it down to props
+
   getReviews = () => {
     reviewDataRetreival()
       .then(res => {
