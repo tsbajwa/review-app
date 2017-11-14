@@ -12,6 +12,7 @@ export default class ReviewContainer extends React.Component {
   handlesortedAndFilteredReviews = sortedAndFilteredReviews => {
     this.setState({ sortedAndFilteredReviews });
   };
+
   render() {
     return (
       <div className="review-container">
