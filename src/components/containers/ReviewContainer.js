@@ -18,6 +18,7 @@ export default class ReviewContainer extends React.Component {
   handleFilteredReviewUpdate = filteredReviews => {
     this.setState({ filteredReviews, reviewsSorted: false });
   };
+
   render() {
     let reviewsToRender = this.state.reviewsSorted
       ? this.state.sortedReviews

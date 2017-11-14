@@ -12,9 +12,11 @@ export default class FilterContainer extends React.Component {
     const filteredReviews = showUnfavourableReviews(this.props.reviews);
     this.props.handleFilteredReviewUpdate(filteredReviews);
   };
+
   handleAllReviewsClick = () => {
     this.props.handleFilteredReviewUpdate(this.props.reviews);
   };
+
   render() {
     return (
       <Filter

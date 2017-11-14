@@ -5,7 +5,7 @@ import ReviewContainer from "../containers/ReviewContainer";
 export default function Main({ loading, reviews, getReviews }) {
   if (loading) {
     return <div>Loading</div>;
-  } else if (reviews.length !== 0) {
+  } else if (reviews.length) {
     return <ReviewContainer reviews={reviews} />;
   } else {
     return <ErrorScreen getReviews={getReviews} />;

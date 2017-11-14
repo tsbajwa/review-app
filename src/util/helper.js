@@ -1,29 +1,17 @@
 export function sortScoreByAscending(reviews) {
-  let sortedReviews = reviews.sort((a, b) => {
-    return a.score - b.score;
-  });
-
-  return sortedReviews;
+  return reviews.sort((a, b) => a.score - b.score);
 }
 
 export function sortScoreByDescending(reviews) {
-  let sortedReviews = reviews.sort((a, b) => {
-    return b.score - a.score;
-  });
-
-  return sortedReviews;
+  return reviews.sort((a, b) => b.score - a.score);
 }
 
 export function sortChronobyAscending(reviews) {
-  return reviews.sort((a, b) => {
-    return new Date(a.createdAt) - new Date(b.createdAt);
-  });
+  return reviews.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt));
 }
 
 export function sortChronobyDescending(reviews) {
-  return reviews.sort((a, b) => {
-    return new Date(b.createdAt) - new Date(a.createdAt);
-  });
+  return reviews.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
 }
 
 export function showFavourableReviews(reviews) {

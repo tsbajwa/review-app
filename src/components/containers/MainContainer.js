@@ -7,6 +7,7 @@ export default class MainContainer extends React.Component {
     loading: true,
     reviews: [],
   };
+
   componentDidMount() {
     this.getReviews();
   }

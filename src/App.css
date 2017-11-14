@@ -45,7 +45,7 @@ h1 {
     background: #008000;
     border-radius: 5px; }
     .error-screen-container__btn:hover, .error-screen-container__btn:active {
-      font-weight: 700; }
+      font-weight: 600; }
 
 .filter-container {
   display: flex;

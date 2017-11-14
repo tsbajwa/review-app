@@ -1,8 +1,7 @@
 import React from "react";
 import ReviewSingleContainer from "../containers/ReviewSingleContainer";
 
-export default function reviewList({ sortedReviews }) {
-  console.log(sortedReviews.length);
+export default function ReviewList({ sortedReviews }) {
   return (
     <div className="review-list-container">
       {sortedReviews.length ? (
