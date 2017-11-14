@@ -1,6 +1,5 @@
 import React from "react";
 import ReviewList from "../components/ReviewList";
-import PageNumberContainer from "./PageNumberContainer";
 import SortContainer from "./SortContainer";
 import FilterContainer from "./FilterContainer";
 
