@@ -1,18 +1,5 @@
-html {
-  box-sizing: border-box;
-}
-body {
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-#root {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
+//General page
+@import "./styling/_page.scss";
 //Helpers
 
 @import "./styling/helpers/_breakpoint.scss";
