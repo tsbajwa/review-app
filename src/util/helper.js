@@ -21,3 +21,20 @@ export function showFavourableReviews(reviews) {
 export function showUnfavourableReviews(reviews) {
   return reviews.filter(review => review.score < 3);
 }
+
+export function generatePageNumbers(totalReviews) {
+  console.log(totalReviews);
+  let pageNumbers = [];
+  const reviewPerPage = 5;
+  const length = totalReviews / reviewPerPage;
+  for (let i = 1; i <= length; i++) {
+    pageNumbers.push(i);
+  }
+  return pageNumbers;
+}
+
+export function generateRenderedReviews(currentPage, sortedReviews) {
+  const indexOfLastTodo = currentPage * 5;
+  const indexOfFirstTodo = indexOfLastTodo - 5;
+  return sortedReviews.slice(indexOfFirstTodo, indexOfLastTodo);
+}

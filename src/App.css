@@ -116,6 +116,16 @@ h1 {
   width: 100%;
   padding-bottom: 20px; }
 
+.page-number-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-top: 15px; }
+  .page-number-container__li {
+    display: inline; }
+    .page-number-container__li:hover {
+      cursor: pointer; }
+
 .review-container {
   max-width: 700px;
   width: 100%; }

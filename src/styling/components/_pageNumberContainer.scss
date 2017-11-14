@@ -1,0 +1,12 @@
+.page-number-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-top: 15px;
+  &__li {
+    display: inline;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
