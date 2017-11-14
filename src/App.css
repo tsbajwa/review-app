@@ -61,6 +61,14 @@ h1 {
     font-size: 14px; }
     .filter-container__btn:hover {
       cursor: pointer; }
+    .filter-container__btn--active {
+      background: #8eee8e;
+      min-height: 50px;
+      width: 33.33%;
+      border-color: #999999;
+      border-width: 1px;
+      border-style: solid;
+      font-size: 14px; }
 
 .sort-container {
   display: flex;

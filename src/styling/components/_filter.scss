@@ -15,5 +15,14 @@
     &:hover {
       cursor: pointer;
     }
+    &--active {
+      background: $light-green;
+      min-height: 50px;
+      width: 33.33%;
+      border-color: $gray;
+      border-width: 1px;
+      border-style: solid;
+      font-size: 14px;
+    }
   }
 }
