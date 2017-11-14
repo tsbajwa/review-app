@@ -2,11 +2,19 @@ import React from "react";
 
 export default function Sort(props) {
   return (
-    <div>
-      <button onClick={props.onAscendingScoreClick}>Ascending Score</button>
-      <button onClick={props.onDescendingScoreClick}>Descending Score</button>
-      <button onClick={props.onAscendingChronoClick}>Newest review</button>
-      <button onClick={props.onDescendingChronoClick}>Oldest review</button>
+    <div className="sort-container">
+      <button className="sort-container__btn" onClick={props.onAscendingScoreClick}>
+        Lowest Score
+      </button>
+      <button className="sort-container__btn" onClick={props.onDescendingScoreClick}>
+        Highest Score
+      </button>
+      <button className="sort-container__btn" onClick={props.onAscendingChronoClick}>
+        Newest review
+      </button>
+      <button className="sort-container__btn" onClick={props.onDescendingChronoClick}>
+        Oldest review
+      </button>
     </div>
   );
 }

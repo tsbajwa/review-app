@@ -8,5 +8,5 @@ export default function reviewList({ sortedReviews }) {
     });
   };
 
-  return <div>{renderList()}</div>;
+  return <div className="review-list-container">{renderList()}</div>;
 }

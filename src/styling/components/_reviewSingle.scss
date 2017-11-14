@@ -1,0 +1,14 @@
+.review-single-container {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.review-single-summary-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-single-comment {
+  text-align: left;
+}

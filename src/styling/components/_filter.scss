@@ -1,15 +1,16 @@
 .filter-container {
   display: flex;
-  background: $green;
-  justify-content: space-between;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
 
   &__btn {
+    background: $green;
     min-height: 50px;
     width: 33.33%;
     border-color: $white;
     border-width: 1px;
     border-style: solid;
+    font-size: 14px;
 
     &:hover {
       cursor: pointer;
