@@ -6,35 +6,24 @@ import FilterContainer from "./FilterContainer";
 
 export default class ReviewContainer extends React.Component {
   state = {
-    sortedReviews: this.props.reviews,
-    filteredReviews: this.props.reviews,
-    reviewsSorted: false,
+    sortedAndFilteredReviews: this.props.reviews,
   };
 
-  handleSortedReviewUpdate = sortedReviews => {
-    this.setState({ sortedReviews, reviewsSorted: true });
+  handlesortedAndFilteredReviews = sortedAndFilteredReviews => {
+    this.setState({ sortedAndFilteredReviews });
   };
-
-  handleFilteredReviewUpdate = filteredReviews => {
-    this.setState({ filteredReviews, reviewsSorted: false });
-  };
-
   render() {
-    let reviewsToSort = this.state.reviewsSorted
-      ? this.state.sortedReviews
-      : this.state.filteredReviews;
     return (
       <div className="review-container">
         <FilterContainer
           reviews={this.props.reviews}
-          handleFilteredReviewUpdate={this.handleFilteredReviewUpdate}
+          handleFilteredReviewUpdate={this.handlesortedAndFilteredReviews}
         />
         <SortContainer
-          reviews={reviewsToSort}
-          handleSortedReviewUpdate={this.handleSortedReviewUpdate}
+          reviews={this.state.sortedAndFilteredReviews}
+          handleSortedReviewUpdate={this.handlesortedAndFilteredReviews}
         />
-        <ReviewList sortedReviews={this.state.filteredReviews} />
-        <PageNumberContainer sortedReviews={this.state.sortedReviews} />
+        <ReviewList sortedReviews={this.state.sortedAndFilteredReviews} />
       </div>
     );
   }
