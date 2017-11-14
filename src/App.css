@@ -5,12 +5,13 @@ html {
 body {
   display: flex;
   justify-content: center;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-align: center; }
 
 body,
 p {
   font-family: "Raleway", sans-serif;
-  font-size: 14px; }
+  font-size: 16px; }
 
 h1,
 h2,
@@ -27,8 +28,32 @@ h1 {
   align-items: center;
   text-align: center; }
   .error-screen-container__btn {
-    background: #78bf3d;
-    border-radius: 5px;
-    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 160px;
     text-decoration: none;
-    padding: 10px 20px 10px 20px; }
+    text-transform: uppercase;
+    width: 100%;
+    background: green;
+    border-radius: 5px; }
+    .error-screen-container__btn:hover, .error-screen-container__btn:active {
+      font-weight: 700; }
+
+.filter-container {
+  display: flex;
+  background: #78bf3d;
+  justify-content: space-between; }
+  .filter-container__btn {
+    min-height: 50px;
+    width: 33.33%;
+    border-color: #ffffff;
+    border-width: 1px;
+    border-style: solid; }
+    .filter-container__btn:hover {
+      cursor: pointer; }
+
+.review-container {
+  max-width: 700px; }

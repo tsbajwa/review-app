@@ -1,0 +1,17 @@
+.filter-container {
+  display: flex;
+  background: $green;
+  justify-content: space-between;
+
+  &__btn {
+    min-height: 50px;
+    width: 33.33%;
+    border-color: $white;
+    border-width: 1px;
+    border-style: solid;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

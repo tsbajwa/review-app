@@ -5,6 +5,7 @@ body {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
+  text-align: center;
 }
 
 //Helpers
@@ -16,3 +17,7 @@ body {
 //components
 
 @import "./styling/components/_errorScreen.scss";
+@import "./styling/components/_filter.scss";
+//containers
+
+@import "./styling/containers/_reviewContainer.scss";

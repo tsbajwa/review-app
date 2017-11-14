@@ -23,7 +23,7 @@ export default class ReviewContainer extends React.Component {
       ? this.state.sortedReviews
       : this.state.filteredReviews;
     return (
-      <div>
+      <div className="review-container">
         <FilterContainer
           reviews={this.props.reviews}
           handleFilteredReviewUpdate={this.handleFilteredReviewUpdate}

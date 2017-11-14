@@ -2,9 +2,16 @@ import React from "react";
 
 export default function Filter(props) {
   return (
-    <div>
-      <button onClick={props.onFavourableReviewsClick}>Positive Reviews</button>
-      <button onClick={props.onUnfavourableClick}>Negative Reviews</button>
+    <div className="filter-container">
+      <div className="filter-container__btn" onClick={props.onAllReviewsClick}>
+        All Reviews
+      </div>
+      <div className="filter-container__btn" onClick={props.onFavourableReviewsClick}>
+        Positive Reviews
+      </div>
+      <div className="filter-container__btn" onClick={props.onUnfavourableClick}>
+        Negative Reviews
+      </div>
     </div>
   );
 }
