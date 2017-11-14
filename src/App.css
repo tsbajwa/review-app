@@ -45,7 +45,8 @@ h1 {
 .filter-container {
   display: flex;
   background: #78bf3d;
-  justify-content: space-between; }
+  justify-content: space-between;
+  width: 100%; }
   .filter-container__btn {
     min-height: 50px;
     width: 33.33%;
