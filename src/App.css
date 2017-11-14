@@ -85,5 +85,17 @@ h1 {
 .review-single-comment {
   text-align: left; }
 
+.review-extra-container {
+  text-align: left; }
+  .review-extra-container span {
+    display: block; }
+
+.review-extra-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 20px; }
+
 .review-container {
   max-width: 700px; }

@@ -8,10 +8,10 @@ export default function ReviewSingle({ review, expanded, onClick }) {
       className="review-single-container"
       onClick={onClick}
     >
-      <div className="review-single-inner">
+      <div>
         <div className="review-single-summary-container">
-          <span className="review-single-summary-container__span">{review.authorName}</span>
-          <span>Score: {review.score} out of 5</span>
+          <span>{review.authorName}</span>
+          <span>Overall Score: {review.score} out of 5</span>
         </div>
         <div className="review-single-comment">
           <p>Comment:</p>
