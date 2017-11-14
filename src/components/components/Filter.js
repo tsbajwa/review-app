@@ -1,15 +1,21 @@
 import React from "react";
 
 export default function Filter(props) {
+  const {
+    onAllReviewsClick,
+    onFavourableReviewsClick,
+    onUnfavourableClick,
+    selectedFilter,
+  } = props;
   return (
     <div className="filter-container">
-      <button className="filter-container__btn" onClick={props.onAllReviewsClick}>
+      <button className="filter-container__btn" onClick={onAllReviewsClick}>
         All Reviews
       </button>
-      <button className="filter-container__btn" onClick={props.onFavourableReviewsClick}>
+      <button className="filter-container__btn" onClick={onFavourableReviewsClick}>
         Positive Reviews
       </button>
-      <button className="filter-container__btn" onClick={props.onUnfavourableClick}>
+      <button className="filter-container__btn" onClick={onUnfavourableClick}>
         Negative Reviews
       </button>
     </div>
